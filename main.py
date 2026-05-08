@@ -13,7 +13,7 @@ from threading import Thread
 # Giltlerdi Render-den alıw
 API_TOKEN = os.environ.get('BOT_TOKEN')
 GEMINI_KEY = os.environ.get('GEMINI_KEY')
-WEB_APP_URL = 'https://Muratbek95.github.io/keleshek-portali/' # Siziń GitHub Pages mánzilińiz
+WEB_APP_URL = 'https://muratbek95.github.io/keleshek-portali/' # Siziń GitHub Pages mánzilińiz
 
 # Gemini sazlawı
 genai.configure(api_key=GEMINI_KEY)
