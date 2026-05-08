@@ -16,7 +16,7 @@ from threading import Thread
 API_TOKEN = os.environ.get('BOT_TOKEN', '8582698330:AAFKN6hDY_x2IYIVAv8CrN4oYzFFtdwBE4M')
 GEMINI_KEY = os.environ.get('GEMINI_KEY')
 # Siziń Vercel yamasa GitHub Pages mánzilińiz
-WEB_APP_URL = 'https://keleshek-portali.vercel.app' 
+WEB_APP_URL = 'https://muratbek95.github.io/keleshek-portali/' 
 
 # Gemini AI-dı sazlaw
 genai.configure(api_key=GEMINI_KEY)
