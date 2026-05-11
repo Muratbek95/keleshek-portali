@@ -1,4 +1,4 @@
-﻿import os
+﻿﻿import os
 import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
@@ -22,7 +22,13 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 
 # FastAPI (Veb-bet ushın)
 app = FastAPI()
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class UserMessage(BaseModel):
     user_id: str
